@@ -22,30 +22,30 @@ export class CreateCardComponent implements OnInit {
   click = () => {
     this.count++
   }
-  booksByStoreID: any;
+  booksByStoreID: any; //remove
 
-  ngOnInit(): void {
+  ngOnInit(): void { //if you don't need please remove
 
   }
 
   newCard() {
     if (this.list.length < this.max) {
-      this.randomNumber = Math.floor(Math.random() * this.max + 1);
-      this.randomId = this.id++
+      this.randomNumber = Math.floor(Math.random() * this.max + 1); //please create function 
+      this.randomId = this.id++                                     //please generate unique id 
       this.list.push({ num: this.randomNumber, id: this.randomId })
 
     }
   }
 
   deleteCard(id: any) {
-    this.list = this.list.filter((element: { id: any }) => {
-      return element.id !== id;
+    this.list = this.list.filter((element: { id: any }) => {  //why type like this?
+      return element.id !== id; // you can write without return
     })
   }
 
   sortCard() {
-    this.list = this.list.sort((a: { num: number; }, b: { num: number; }) => {
-      return a.num - b.num;
+    this.list = this.list.sort((a: { num: number; }, b: { num: number; }) => { //why type like this?
+      return a.num - b.num;  // you can write without return
     });
   }
 

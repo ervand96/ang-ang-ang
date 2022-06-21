@@ -5,8 +5,8 @@
     <button (click)="sortCard()">{{sortButton}}</button>
 </div>
 <div class="glb">
-    <div class="card" *ngFor="let item of list">
-        <div class="button">
+    <div class="card" *ngFor="let item of list"> 
+        <div class="button"> //create component for card
             <button (click)="deleteCard(item.id)">
                 {{deleteButton}}
             </button>
