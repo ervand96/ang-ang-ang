@@ -1,4 +1,7 @@
 # AngularNewProject
+Short preview
+![image](https://user-images.githubusercontent.com/67708950/174815314-e986bee2-80b9-4d14-84f8-8b9f89a4a05e.png)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
 
