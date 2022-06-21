@@ -1,0 +1,13 @@
+.button {
+    padding: 10px;
+}
+
+.btnSec {
+    display: flex;
+    column-gap: 20px;
+}
+
+p {
+    font-size: 50px;
+    text-align: center;
+}

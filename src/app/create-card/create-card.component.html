@@ -6,11 +6,6 @@
 </div>
 <div class="glb">
     <div class="card" *ngFor="let item of list">
-        <div class="button">
-            <button (click)="deleteCard(item.id)">
-                {{deleteButton}}
-            </button>
-            <p>{{item.num}}</p>
-        </div>
+        <app-delete-button [item]="item" (deleteFunc)="buttonDelete(item.id)"></app-delete-button>
     </div>
 </div>
