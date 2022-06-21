@@ -1,0 +1,16 @@
+<button (click)="click()">{{titleButtonClick}}</button>
+<h1>{{count}}</h1>
+<div class="btnSec">
+    <button (click)="newCard()">{{createCard}}</button>
+    <button (click)="sortCard()">{{sortButton}}</button>
+</div>
+<div class="glb">
+    <div class="card" *ngFor="let item of list">
+        <div class="button">
+            <button (click)="deleteCard(item.id)">
+                {{deleteButton}}
+            </button>
+            <p>{{item.num}}</p>
+        </div>
+    </div>
+</div>

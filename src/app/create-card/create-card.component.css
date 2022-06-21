@@ -1,0 +1,26 @@
+.glb {
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 20px;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+.button {
+    padding: 10px;
+}
+
+.btnSec {
+    display: flex;
+    column-gap: 20px;
+}
+
+p {
+    font-size: 50px;
+    text-align: center;
+}
