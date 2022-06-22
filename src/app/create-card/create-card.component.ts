@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './create-card.component.html',
   styleUrls: ['./create-card.component.css']
 })
-
 export class CreateCardComponent {
   title = 'angular-new-project';
   createCard = 'Create New Card';
@@ -16,7 +15,6 @@ export class CreateCardComponent {
   count = 1;
   list: any = [];
   max: number = 50;
-  id: any;
   randomNumber: any;
   randomId: any;
 
