@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./delete-button.component.css']
 })
 export class DeleteButtonComponent {
-  @Input() item: any = []
+  @Input() item: any;
   @Output() deleteFunc = new EventEmitter()
   deleteButton: string = 'X'
 

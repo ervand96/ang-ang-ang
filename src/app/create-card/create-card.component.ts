@@ -14,26 +14,24 @@ export class CreateCardComponent {
   count = 1;
   list: any = [];
   max: number = 50;
-  randomNumber: any;
-  randomId: any;
 
   click = () => {
     this.count++
   }
 
   randomNum() {
-    this.randomNumber = Math.floor(Math.random() * this.max + 1);
+    const randomNumber = Math.floor(Math.random() * this.max + 1);
+    return randomNumber
   }
 
   uniqId() {
-    this.randomId = Math.floor(Math.random() * this.max + 1)
+    const randomId = Math.floor(Math.random() * this.max + 1)
+    return randomId
   }
 
   newCard() {
     if (this.list.length < this.max) {
-      this.randomNum()
-      this.uniqId()
-      this.list.push({ num: this.randomNumber, id: this.randomId })
+      this.list.push({ num: this.randomNum(), id: this.uniqId() })
     }
   }
 
