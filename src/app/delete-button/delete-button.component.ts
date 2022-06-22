@@ -7,8 +7,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class DeleteButtonComponent {
   @Input() item: any = []
-  @Input() deleteButton: string = 'X'
   @Output() deleteFunc = new EventEmitter()
+  deleteButton: string = 'X'
 
   deleteCard(): void {
     this.deleteFunc.emit();

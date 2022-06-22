@@ -9,7 +9,6 @@ export class CreateCardComponent {
   title = 'angular-new-project';
   createCard = 'Create New Card';
   titleButtonClick = "Click";
-  deleteButton = 'X';
   sortButton = "Sort Button";
 
   count = 1;
