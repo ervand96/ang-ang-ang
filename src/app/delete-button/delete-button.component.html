@@ -1,6 +1,12 @@
-<div class="button">
-    <button (click)="deleteCard()">
-        {{deleteButton}}
-    </button>
-    <p>{{item.num}}</p>
+<div class="card">
+    <div class="button">
+        <button (click)="deleteCard()">
+            {{deleteButton}}
+        </button>
+        <p>
+            <a [routerLink]="['/cards/', item.num]">
+                {{item.num}}
+            </a>
+        </p>
+        </div>
 </div>
