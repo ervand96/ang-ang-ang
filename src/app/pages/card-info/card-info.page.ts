@@ -1,11 +1,11 @@
-import { DataService } from './../post.service';
+import { DataService } from '../../service/post.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, } from '@angular/router';
 
 @Component({
   selector: 'app-card-info',
-  templateUrl: './card-info.component.html',
-  styleUrls: ['./card-info.component.css']
+  templateUrl: './card-info.page.html',
+  styleUrls: ['./card-info.page.css']
 })
 export class CardInfoComponent implements OnInit {
   id: any;

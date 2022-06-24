@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-create-card',
-  templateUrl: './create-card.component.html',
-  styleUrls: ['./create-card.component.css']
+  templateUrl: './create-card.page.html',
+  styleUrls: ['./create-card.page.css']
 })
 export class CreateCardComponent {
   title = 'angular-new-project';
