@@ -10,11 +10,7 @@ import { ActivatedRoute, ParamMap, } from '@angular/router';
 export class CardInfoComponent implements OnInit {
   id: any;
 
-  constructor(private dataService: DataService, private route: ActivatedRoute) { }
-
-  getCard() {
-    this.dataService.getData(this.id);
-  }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {

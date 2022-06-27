@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { NotFoundComponent } from './pages/not-found/not-found.page';
-import { CardInfoComponent } from './pages/card-info/card-info.page';
 
 const routes: Routes = [
   { path: '', redirectTo: 'cards', pathMatch: 'full' },
-  { path: '**/**', component: NotFoundComponent },
+  {
+    path: 'not-found',
+    loadChildren: () => import('./pages/not-found/not-found.module').then((a) => a.NotFoundModule)
+  },
+  { path: '**', redirectTo: 'not-found' },
   {
     path: 'cards',
     loadChildren: () => import('./pages/create-card/create-card.module').then((a) => a.CreateCardModule)

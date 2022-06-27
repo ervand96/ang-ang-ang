@@ -8,15 +8,21 @@ import { Component } from '@angular/core';
 export class CreateCardComponent {
   title = 'angular-new-project';
   createCard = 'Create New Card';
-  titleButtonClick = "Click";
+  titleButtonPlus = "Plus";
+  titleButtonMinus = "Minus";
   sortButton = "Sort Button";
 
-  count = 1;
+  count = 0;
   list: any = [];
   max: number = 50;
 
   click = () => {
     this.count++
+  }
+
+  minus() {
+    if (this.count > 0)
+      this.count--
   }
 
   randomNum() {

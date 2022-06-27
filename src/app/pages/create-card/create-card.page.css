@@ -5,3 +5,12 @@
     column-gap: 20px;
     flex-wrap: wrap;
 }
+
+.buttonSection {
+    display: flex;
+    column-gap: 10px;
+}
+.btnSec {
+    display: flex;
+    column-gap: 10px;
+}
